@@ -4,14 +4,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh '''
-                    echo "Hello"
-                '''
-
-                sh 'echo hello 2'
-
+                sh 'echo "Hello"'
                 sh 'npm -v'
                 sh 'npm cypress -v'
+                sh 'npx cypress run --spec cypress/e2e/MyFirstTest.cy.js'
             }
         }
     }

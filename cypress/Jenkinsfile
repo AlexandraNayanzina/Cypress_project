@@ -4,6 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
+                    npm -i init
+                    npm install cypress --save -dev 
                     npx cypress run --spec /cypress/e2e/MyFirstTest.cy.js  
                 '''
             }

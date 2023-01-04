@@ -9,6 +9,7 @@ pipeline {
                 sh 'npm cypress -v'
                 sh 'pwd'
                 sh 'ls -la'
+                sh 'npm i'
                 sh 'npx cypress run --spec cypress/e2e/MyFirstTest.cy.js'
             }
         }

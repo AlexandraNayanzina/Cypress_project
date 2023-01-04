@@ -11,6 +11,7 @@ pipeline {
                 sh 'echo hello 2'
 
                 sh 'npm -v'
+                sh 'npx cypress run --spec cypress/e2e/MyFirstTest.cy.js'
             }
         }
     }

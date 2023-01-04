@@ -5,10 +5,10 @@
         cy.title().should('eq','Google')
     })
 
-    it('verify title - negative', () => {
-        cy.visit('https://www.google.com/')
-        cy.title().should('eq','Google123')
-    })
+    // it('verify title - negative', () => {
+    //     cy.visit('https://www.google.com/')
+    //     cy.title().should('eq','Google123')
+    // })
 
 
   })

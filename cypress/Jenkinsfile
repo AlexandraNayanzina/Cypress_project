@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
-                    echo "Hello" 
+                    npx cypress run --spec /cypress/e2e/MyFirstTest.cy.js  
                 '''
             }
         }

@@ -7,7 +7,7 @@ pipeline {
                 sh 'echo "Hello"'
                 sh 'npm -v'
                 sh 'npm cypress -v'
-                sh 'npx cypress run --spec cypress/e2e/MyFirstTest.cy.js'
+                sh 'npx cypress run --spec e2e/MyFirstTest.cy.js'
             }
         }
     }

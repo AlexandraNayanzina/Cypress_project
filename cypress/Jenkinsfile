@@ -1,11 +1,16 @@
 pipeline {
     agent any
+    tools {nodejs 'Node19'}
     stages {
         stage('build') {
             steps {
                 sh '''
                     echo "Hello"
                 '''
+
+                sh 'echo hello 2'
+
+                sh 'npm -v'
             }
         }
     }
